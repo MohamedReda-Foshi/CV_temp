@@ -19,7 +19,7 @@ function Navbar() {
                   spy={true}
                   smooth={true}
                   className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  to="Home"
+                  
                 >
                   Home
                 </Link>
@@ -28,7 +28,6 @@ function Navbar() {
                 <Link
                   spy={true}
                   smooth={true}
-                  to="About"
                   className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                   About
@@ -38,7 +37,7 @@ function Navbar() {
                 <Link
                   spy={true}
                   smooth={true}
-                  to="Portfolio"
+                  
                   className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                   Portfolio
