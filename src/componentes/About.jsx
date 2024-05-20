@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div id="About">
-      <div className="flex h-lvh text-base/loose">
+      <div className=" px-3 flex h-lvh text-base/loose items-center">
         
           <div className="">
             <h1 className="text-3xl text-b font-bold">About</h1>
