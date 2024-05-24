@@ -5,8 +5,9 @@ import "./App.css";
 //import Page from "./Pages/Page";
 import Home from "./componentes/Home";
 import About from "./componentes/About";
-import Portfolio from "./componentes/Portfolio";
+import Works from "./componentes/Works";
 import Navbar from "./componentes/Navbar";
+import Contact from "./componentes/Contact";
 
 // Routes
 // Route
@@ -38,18 +39,19 @@ function App() {
 
 const App = () => {
   return (
-    <div className=" grid grid-cols-6">
+    <div className=" md:grid grid-cols-5   ">
    
-     <div className=" hidden md:block md:col-span-1   ">
+     <div className="  md:col-span-1   ">
       <Navbar/>
       </div> 
 
-      <div className=" col-span-5 ">
+      <div className=" md:col-span-4 ">
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
-            <Route path="Portfolio" element={<Portfolio />} />
+            <Route path="Works" element={<Works />} />
+            <Route path="Contact" element={<Contact />} />
           </Route>
         </Routes>
       </div>

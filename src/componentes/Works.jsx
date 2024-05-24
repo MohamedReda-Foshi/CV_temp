@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Portfolio() {
+function Works() {
   return (
-    <div id="Portfolio" className='bg-green-200'>
+    <div id="Works" className='bg-green-200'>
         <div className=' flex items-center justify-center h-lvh'>
             <h1>
-            Portfolio
+            Works
             </h1>
         </div>
     </div>
   )
 }
 
-export default Portfolio
+export default Works

@@ -1,22 +1,25 @@
 
 import Button from "./Button";
+import Card from "./Card";
 import PerInfo from "./PerInfo";
+import Progress from "./Progress";
+import Progress2 from "./Progress2";
 
 function About() {
   return (
-    <div id="About" className="h-lvh flex flex-col">
-      <div className="px-3 flex flex-col text-base/loose items-center space-y-4">
+    <div id="About" className="h-lvh flex flex-col py-14 px-9 ">
+      <div className=" flex flex-col text-base/loose items-center space-y-9">
         <h1 className="text-3xl font-bold items-start">About</h1>
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className=" md:grid grid-cols-3 gap-5  ">
           <div className="overflow-hidden">
-            <div className="grid-rows-2 ">
+            <div>
 
-            <div className="row-span-2 w-300px h-[420px]">
+            <h2 className="uppercase text-3xl font-bold  ">DR HREHDIIEIEHDJE</h2>
+            <div className="  h-[420px]  items-center">
                
                  
-                 {/* <img className="rounded-lg  w-full h-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"alt="imag2" /> */}
-                 <img className="rounded-lg  w-full h-full max-w-72 min-w-40" src="/img2.jpg"  alt="imag2" />
+                 <img className="rounded-lg  w-full h-full  object-cover" src="/img2.jpg"  alt="imag2" />
               
             </div>
 
@@ -43,20 +46,20 @@ function About() {
 
           </div>
             
-          <div className=" px-4 space-y-6">
+          <div className=" px-1 space-y-6 col-span-2">
             <div className="text-3xl font-bold space-y-2">
-              <h2 className="uppercase">DR HREHDIIEIEHDJE</h2>
-              <h2 className="text-2xl">rhjijieiiddk</h2>
+              <h2 className="uppercase  sm:block hidden">DR HREHDIIEIEHDJE</h2>
+              <h2 className="text-2xl sm:block hidden">rhjijieiiddk</h2>
             </div>
-            <div className="text-balance">
+            <div className="line-clamp-4 text-wrap leading-7	">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officiis. Fuga numquam aspernatur temporibus laudantium! Praesentium aperiam obcaecati numquam modi asperiores nemo porro.
               </p>
             </div>
             <PerInfo />
+            <Button name="Cv download"/>
           </div>
 
-            <Button />
         </div>
       </div>
 
@@ -74,9 +77,19 @@ function About() {
         <h1 className="text-4xl">Skills</h1>
       </div>
 
-      <div>
-        <p>Component about the skills</p>
+      <div className="py-5  flex-col sm:flex-row flex px-0">
+        <Progress skill="html " level="100"/>
+        <Progress2 skill="react " level="90"/>
+        <Progress skill="java script" level="100"/>
+        <Progress2 skill="tailwind css" level="90"/>
       </div>
+
+      <div className=" flex flex-row py-8">
+        <Card/>
+      
+    
+      </div>
+
     </div>
   );
 }
