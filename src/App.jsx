@@ -5,7 +5,7 @@ import "./App.css";
 //import Page from "./Pages/Page";
 import Home from "./componentes/Home";
 import About from "./componentes/About";
-import Works from "./componentes/Works";
+import Experiences from "./componentes/Experiences";
 import Navbar from "./componentes/Navbar";
 import Contact from "./componentes/Contact";
 
@@ -50,7 +50,7 @@ const App = () => {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
-            <Route path="Works" element={<Works />} />
+            <Route path="Experiences" element={<Experiences />} />
             <Route path="Contact" element={<Contact />} />
           </Route>
         </Routes>

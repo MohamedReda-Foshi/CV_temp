@@ -4,9 +4,9 @@ import PHD from "./PHD";
 import ContantExp from "./ContantExp";
 import Master from "./Master";
 
-function Works() {
+function Experiences() {
   return (
-    <div id="Works" className="px-7">
+    <div id="Experiences" className="px-7">
       <div className=" flex items-center justify-center  ">
         <Timeline />
       </div>
@@ -26,4 +26,4 @@ function Works() {
   );
 }
 
-export default Works;
+export default Experiences;
