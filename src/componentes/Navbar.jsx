@@ -4,7 +4,6 @@ import Hamburger from "./Hamburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 
-// import { Link } from "react-scroll";
 
 function Navbar() {
 
@@ -12,6 +11,8 @@ function Navbar() {
   const [message, setMessage] = useState(<GiHamburgerMenu size={30} />)
   
   
+
+
   // dynamic year
   const today = new Date();
   const year = today.getFullYear();
@@ -47,7 +48,7 @@ function Navbar() {
       <div>
     <div className="md:hidden" >
 
-        <div className="bg-stone-300 w-lvw fixed z-10 flex justify-between  items-center shadow-sm   " >
+        <div className="w-lvw fixed z-30 bg-stone-100 flex justify-between  items-center shadow-sm   " >
 
           <div>
            <button  onClick={handClickPc} className="py-3" >
@@ -62,7 +63,9 @@ function Navbar() {
           </div>
 
             <div className=" px-3">
-              <button className="bg-red-600 text-black">hi</button>
+            <button className="px-1 text-white  w-10 h-10 bottom-16 right-16 rounded-md items-center" >
+           darck mode
+            </button>
             </div>
 
         </div>
@@ -76,7 +79,7 @@ function Navbar() {
     
 
     
-      <div className="space-y-4 fixed bg-stone-300 h-screen py-56 px-4 ">
+      <div className="space-y-4 fixed bg-stone-100 h-screen py-56 px-4 ">
 
 
      
@@ -93,7 +96,7 @@ function Navbar() {
                 to="/"
                 spy={true}
                 smooth={true}
-                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                 Home
               </Link>
@@ -103,7 +106,7 @@ function Navbar() {
                 to="/About"
                 spy={true}
                 smooth={true}
-                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                 About
               </Link>
@@ -113,8 +116,8 @@ function Navbar() {
                 to="/Works"
                 spy={true}
                 smooth={true}
-                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                >
+                className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+
                 Works
               </Link>
             </li>
@@ -124,12 +127,14 @@ function Navbar() {
                spy={true}
                smooth={true}
               
-              className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+              className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
                 Contact
               </Link>
             </li>
           </ul>
         </div>
+
+ 
         <div className=" py-64">
           <p className="font-light">
             

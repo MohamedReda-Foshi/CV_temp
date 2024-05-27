@@ -15,7 +15,7 @@ function About() {
           <div className="overflow-hidden">
             <div>
 
-            <h2 className="uppercase text-3xl font-bold  ">DR HREHDIIEIEHDJE</h2>
+            <h2 className="uppercase text-3xl font-bold block sm:hidden ">DR HREHDIIEIEHDJE</h2>
             <div className="  h-[420px]  items-center">
                
                  

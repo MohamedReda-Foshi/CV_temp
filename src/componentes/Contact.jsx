@@ -3,10 +3,10 @@ import Button from './Button'
 
 function Contact() {
   return (
-    <div className=' flex items-center lg:px-40 flex-col md:flex-row py-20 md:py-0'>
+    <div className=' flex items-center lg:px-40 flex-col md:flex-row py-20 md:py-0 '>
 
         <div>
-          <h1 className="text-3xl font-medium md:hidden ">Contact us</h1>
+          <h1 className="text-3xl font-medium block sm:hidden ">Contact me</h1>
         </div>
 
         <div className='max-w-80'>
@@ -15,9 +15,9 @@ function Contact() {
 
         <div>
 
-                <div className="flex min-h-screen items-center justify-center bg-white ">
+            <div className="flex min-h-screen items-center justify-center  ">
             <div className="mx-auto max-w-lg">
-              <h1 className="text-3xl font-medium">Contact us</h1>
+              <h1 className="text-3xl font-medium  hidden sm:block">Contact me</h1>
               <p className="mt-3">Email us at help@domain.com or message us here:</p>
 
               <form action="https://api.web3forms.com/submit" className="mt-3">
