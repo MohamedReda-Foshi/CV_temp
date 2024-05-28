@@ -28,7 +28,7 @@ function Home() {
             </div>
 
             <div>
-              <p className="text-wrap ">
+              <p className="text-wrap pr-20  ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a
                 corrupti, nam autem natus illum mollitia debitis maiores, ab
                 eveni

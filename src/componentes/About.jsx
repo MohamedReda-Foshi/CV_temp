@@ -7,7 +7,9 @@ import Progress2 from "./Progress2";
 
 function About() {
   return (
-    <div id="About" className="h-lvh flex flex-col py-14 px-9 ">
+    <div className=" px-9">
+
+    <div id="About" className=" flex flex-col py-14 px-9  ">
       <div className=" flex flex-col text-base/loose items-center space-y-9">
         <h1 className="text-3xl font-bold items-start">About</h1>
 
@@ -46,7 +48,7 @@ function About() {
 
           </div>
             
-          <div className=" px-1 space-y-6 col-span-2">
+          <div className=" px-1 space-y-6 col-span-2 ">
             <div className="text-3xl font-bold space-y-2">
               <h2 className="uppercase  sm:block hidden">DR HREHDIIEIEHDJE</h2>
               <h2 className="text-2xl sm:block hidden">rhjijieiiddk</h2>
@@ -63,33 +65,34 @@ function About() {
         </div>
       </div>
 
-      <div className="my-6">
+      <div className="dark:bg-stone-900 ">
+      <div className="my-6 dark:bg-stone-900">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi iure officia repellendus natus et voluptate reprehenderit cumque, ipsam laborum adipisci delectus accusantium magni fugit! Voluptatem repellendus dolor asperiores quas dicta!
         </p>
 
-        <div className="mt-4">
-          <button className="btn">cv download</button>
-        </div>
+       
       </div>
 
-      <div className="my-6">
-        <h1 className="text-4xl">Skills</h1>
+      <div className="my-6 ">
+        <h1 className="text-4xl ">Skills</h1>
       </div>
 
-      <div className="py-5  flex-col sm:flex-row flex px-0">
+      <div className="py-5  flex-col sm:flex-row flex px-0 ">
         <Progress skill="html " level="100"/>
         <Progress2 skill="react " level="90"/>
         <Progress skill="java script" level="100"/>
         <Progress2 skill="tailwind css" level="90"/>
       </div>
 
-      <div className=" flex flex-row py-8">
+      <div className=" flex flex-row py-8 ">
         <Card/>
       
     
       </div>
 
+        </div>
+    </div>
     </div>
   );
 }

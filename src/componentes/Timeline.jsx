@@ -10,12 +10,12 @@ const Timeline = () => {
 
         <div className="mb-8 flex justify-between items-center w-full right-timeline">
           <div className="order-1 w-5/12"></div>
-          <div className="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
-            <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
+          <div className="z-20 flex items-center order-1 bg-black dark:bg-white shadow-xl w-8 h-8 rounded-full">
+            <h1 className="mx-auto font-semibold text-lg text-white dark:text-black">1</h1>
           </div>
-          <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
-            <h3 className="mb-3 font-bold text-gray-800 text-xl">Bachelor's</h3>
-            <p className="text-sm leading-snug tracking-wide text-black text-opacity-100 line-clamp-3">
+          <div className="order-1 bg-white dark:bg-black rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 className="mb-3 font-bold text-gray-800 dark:text-white text-xl">Bachelor's</h3>
+            <p className="text-sm leading-snug tracking-wide text-black dark:text-white text-opacity-100 line-clamp-3">
               Lorem Ipsum is simply dummy text of the printing and
             </p>
             <div className="py-4">
@@ -31,12 +31,12 @@ const Timeline = () => {
 
         <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
           <div className="order-1 w-5/12"></div>
-          <div className="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
-            <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
+          <div className="z-20 flex items-center order-1 bg-black dark:bg-white shadow-xl w-8 h-8 rounded-full">
+            <h1 className="mx-auto text-white  dark:text-black font-semibold text-lg">2</h1>
           </div>
-          <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
-            <h3 className="mb-3 font-bold text-black text-xl">Master's</h3>
-            <p className="ttext-sm leading-snug tracking-wide text-black text-opacity-100 line-clamp-3">
+          <div className="order-1 bg-white dark:bg-black rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 className="mb-3 font-bold text-black dark:text-white text-xl">Master's</h3>
+            <p className="ttext-sm leading-snug tracking-wide text-black dark:text-white text-opacity-100 line-clamp-3">
               Lorem Ipsum is simply dummy text of the printing and
             </p>
             <div className="py-4">
@@ -51,12 +51,12 @@ const Timeline = () => {
 
         <div className="mb-8 flex justify-between items-center w-full right-timeline">
           <div className="order-1 w-5/12"></div>
-          <div className="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
-            <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
+          <div className="z-20 flex items-center order-1 bg-black  dark:bg-white shadow-xl w-8 h-8 rounded-full">
+            <h1 className="mx-auto font-semibold text-lg text-white dark:text-black">3</h1>
           </div>
-          <div className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
-            <h3 className="mb-3 font-bold text-black text-xl">Doctoral</h3>
-            <p className="text-sm leading-snug tracking-wide text-black text-opacity-100 line-clamp-3">
+          <div className="order-1 bg-white dark:bg-black rounded-lg shadow-xl w-5/12 px-6 py-4">
+            <h3 className="mb-3 font-bold text-black dark:text-white text-xl">Doctoral</h3>
+            <p className="text-sm leading-snug tracking-wide  text-black dark:text-white text-opacity-100 line-clamp-3">
               Lorem Ipsum is simply dummy text of the printing and
             </p>
             <div className="py-4">

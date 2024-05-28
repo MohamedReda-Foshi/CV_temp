@@ -6,8 +6,8 @@ function ContantExp() {
       <div className="">
         <h1 className="text-3xl font-bold">Bachelor's </h1>
       </div>
-      <div className=" py-3 bg-slate-100 ">
-      <div className="flex-col lg:flex-row flex  justify-center gap-11 px-10   ">
+      <div className=" py-3 bg-slate-100 dark:bg-black ">
+      <div className="flex-col lg:flex-row flex  justify-center gap-11    ">
         <div>
           <img src="/img2.jpg" className="rounded-md   " alt="hi" />
         </div>

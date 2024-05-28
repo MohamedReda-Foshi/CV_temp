@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { MdDarkMode } from "react-icons/md";
+import { FaSun } from "react-icons/fa";
 
-
-function Navbar() {
+function Navbar({ toggleDarkMode, darkMode }) {
 
   const [Open, setOpen]=useState(false);
   const [message, setMessage] = useState(<GiHamburgerMenu size={30} />)
@@ -48,7 +49,7 @@ function Navbar() {
       <div>
     <div className="md:hidden" >
 
-        <div className="w-lvw fixed z-30 bg-stone-100 flex justify-between  items-center shadow-sm   " >
+        <div className="w-lvw fixed z-30 bg-stone-100 dark:bg-black flex justify-between  items-center shadow-sm   " >
 
           <div>
            <button  onClick={handClickPc} className="py-3" >
@@ -63,8 +64,8 @@ function Navbar() {
           </div>
 
             <div className=" px-3">
-            <button className="px-1 text-white  w-10 h-10 bottom-16 right-16 rounded-md items-center" >
-           darck mode
+            <button className=" text-white bg-black dark:bg-white dark:text-black w-10 h-10 bottom-16 right-16 rounded-md items-center" onClick={toggleDarkMode}>
+              {darkMode ? <FaSun size={30} /> : <MdDarkMode size={30} />}
             </button>
             </div>
 
@@ -72,14 +73,14 @@ function Navbar() {
     
       </div>
 
-    <div className="hidden md:block">
+    <div className="hidden md:block ">
     <div  className=" flex flex-col  items-center   "> 
       
       
     
 
     
-      <div className="space-y-4 fixed bg-stone-100 h-screen py-56 px-4 ">
+      <div className="space-y-4 fixed bg-stone-100 h-screen py-56 px-5  dark:bg-black dark:text-white">
 
 
      
@@ -135,7 +136,11 @@ function Navbar() {
         </div>
 
  
-        <div className=" py-64">
+        <div className=" py-52">
+        <button className="px-1 text-white bg-black dark:bg-white dark:text-black w-10 h-10 bottom-16 right-16 rounded-md items-center" onClick={toggleDarkMode}>
+              {darkMode ? <FaSun size={30} /> : <MdDarkMode size={30} />}
+            </button>
+
           <p className="font-light">
             
             <p>
