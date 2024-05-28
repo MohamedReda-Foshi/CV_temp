@@ -9,6 +9,7 @@ import Experiences from "./componentes/Experiences";
 import Navbar from "./componentes/Navbar";
 import Contact from "./componentes/Contact";
 
+import { useState } from "react";
 // Routes
 // Route
 // useNavigate
@@ -37,25 +38,46 @@ function App() {
   
   */
 
-const App = () => {
+
+function App  ()  {
+
+
+
+  const [darkMode, setDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+  
+
+
+
+
+
+
+
   return (
+    <div className={`${darkMode ? "dark" : ""}`}>
     <div className=" md:grid grid-cols-5   ">
    
      <div className="  md:col-span-1   ">
-      <Navbar/>
+      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       </div> 
 
-      <div className=" md:col-span-4 ">
+    <div className=" md:col-span-4  ">
+      <div className="text-black bg-white dark:text-white dark:bg-stone-900">    
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
             <Route path="Experiences" element={<Experiences />} />
-            <Route path="Contact" element={<Contact />} />
+            <Route path="Contact" element={<Contact darkMode={darkMode}/>} />
           </Route>
         </Routes>
       </div>
+    </div>
 
+    </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-function Contact() {
+function Contact( {darkMode} ) {
   return (
     <div className=' flex items-center lg:px-40 flex-col md:flex-row py-20 md:py-0 '>
 
@@ -10,7 +10,11 @@ function Contact() {
         </div>
 
         <div className='max-w-80'>
-            <img src="/contact.jpg " alt="ji" />
+
+        {/* <img src={darkMode ? '/img2.jpg' : '/imagLight.png'}  alt="Light" /> */}
+              {/* {darkMode ? <img src='/imagDarck.png'  alt="Light" /> : <img src='/imagLight.png'  alt="Light" />} */}
+              { darkMode ?  <img src="/imagDarck.png " className='h-96 w-96' alt="log.dark"/> : <img src="/imagLight.png" className='h-96 w-96' alt="logo" />}
+              
         </div>
 
         <div>

@@ -37,13 +37,13 @@ function Card() {
 
   return (
 <div>
-   <div className='flex gap-4 flex-col sm:flex-row max-lg:250px'>
+   <div className='flex gap-4 flex-col sm:flex-row max-lg:250px '>
  
                 {data.map((item) => (
-                <div className="p-8 space-y-3 border-2 border-black  rounded-xl  " key={item.id}>
-                            <div className="icon black">{[item.icon]}</div >
+                <div className="p-8 space-y-3 border-2  border-black dark:bg-stone-900 dark:border-white   rounded-xl  " key={item.id}>
+                            <div className="icon black ">{[item.icon]}</div >
                             <div className="title text-4xl">{item.title}</div >
-                            <div className="text">{item.text}</div >
+                            <div className="text dark:text-white">{item.text}</div >
                 </div >
                   ))}      
 

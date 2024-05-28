@@ -4,7 +4,7 @@ function Project() {
   return (
     <div>
 
-      <div className="mb-12 lg:mb-0 bg-[#f6f7f8] p-3  rounded-r-lg ">
+      <div className="mb-12 lg:mb-0 bg-[#f6f7f8] dark:bg-black p-3  rounded-r-lg ">
         <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg  bg-[50%]" data-te-ripple-init data-te-ripple-color="light">
           <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg" className="w-full" alt="project" />
           <a href="#!">
@@ -20,7 +20,7 @@ function Project() {
           </svg>
           Hot news
         </div>
-        <p className="text-neutral-500 line-clamp-3	">
+        <p className="text-neutral-500 dark:text-neutral-200 line-clamp-3	">
           Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat
           vulputate. Ut vulputate est non quam dignissim elementum. Donec a
           ullamcorper diam.

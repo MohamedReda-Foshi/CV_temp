@@ -32,7 +32,7 @@ export default function Page() {
 
         <div className="   hidden md:block fixed">
 
-          <div className="py-80 h-lvh bg-stone-300 col-span-1 px-11 ">
+          <div className="py-80  bg-stone-300 col-span-1 px-11 ">
 
 
 
