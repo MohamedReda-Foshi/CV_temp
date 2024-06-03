@@ -17,7 +17,7 @@ function Animation_text() {
     <div>
       <div className=" font-bold">
         <div className="text-center ">
-          <div className="text-center text-3xl font-bold">
+          <div className="text-center text-3xl font-thin ">
             Services offered {currentWord}
           </div>
       

@@ -4,7 +4,7 @@ function Project() {
   return (
     <div>
 
-      <div className="mb-12 lg:mb-0 bg-[#f6f7f8] dark:bg-black p-3  rounded-r-lg ">
+      <div className="mb-12 lg:mb-0 bg-[#f6f7f8] dark:bg-black p-3  rounded-r-lg drop-shadow-xl  ">
         <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg  bg-[50%]" data-te-ripple-init data-te-ripple-color="light">
           <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg" className="w-full" alt="project" />
           <a href="#!">

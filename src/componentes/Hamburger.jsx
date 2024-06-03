@@ -5,7 +5,7 @@ function Hamburger() {
   return (
     <div>
 
-<div className=" fixed bg-stone-300 py-8 h-lvh px-4 ">
+<div className=" fixed bg-stone-300 dark:bg-black dark:text-white py-8 h-lvh px-4 ">
 
  
 <div>
@@ -40,6 +40,18 @@ function Hamburger() {
           About
         </Link>
       </li>
+      <li>
+              <Link 
+               to="/Research"
+               spy={true}
+               smooth={true}
+              
+               className="relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                >
+                Research
+              </Link>
+      </li>
+      
       <li>
         <Link
           to="/Experiences"

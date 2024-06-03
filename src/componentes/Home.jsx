@@ -8,34 +8,34 @@ import Animation_text from "./Animation_text"
 function Home() {
   return (
     
-      <div  className=" bg-white-300 py-32 h-lvh flex items-center flex-col md:flex-row text-base/loose  ">
+      <div  className=" bg-white-300 h-lvh flex items-center justify-center flex-col md:flex-row text-base/loose max-w-7xl ">
           <div className="">
           <div className="px-7 py-6">
             <img className=" rounded-full object-cover  min-h-32 min-w-32 max-w-50  max-h-56  " src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
           </div>
         </div>
 
-        <div  className="space-y-2">
+        <div  className="space-y-3">
 
           <div>
-            <h1 className="text-4xl text-wrap  uppercase ">P title Full name</h1>
+            <h1 className="text-4xl text-wrap   font-bold ">Professor Jaouad Foshi</h1>
           </div>
 
-          <div className=" flex  flex-col items-start 	">
+          <div className=" flex  flex-col items-start space-y-3	">
 
             <div>
               <Animation_text/>
             </div>
 
             <div>
-              <p className="text-wrap pr-20  ">
+              <p className="text-wrap max-w-screen-md ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a
                 corrupti, nam autem natus illum mollitia debitis maiores, ab
                 eveni
               </p>
             </div>
 
-            <div className=" py-5 ">
+            <div className=" ">
               <ul className="flex flex-row justify-around  space-x-5 text-base/loose">
                 <li className="">
                   <button className="transition ">

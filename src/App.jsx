@@ -8,8 +8,12 @@ import About from "./componentes/About";
 import Experiences from "./componentes/Experiences";
 import Navbar from "./componentes/Navbar";
 import Contact from "./componentes/Contact";
+import Research from "./componentes/Research";
 
 import { useState } from "react";
+
+//import './scroll.css';
+
 // Routes
 // Route
 // useNavigate
@@ -57,7 +61,7 @@ function App  ()  {
 
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div className={`${darkMode ? "dark" : ""} overflow-y-scroll h-lvh`} >
     <div className=" md:grid grid-cols-5   ">
    
      <div className="  md:col-span-1   ">
@@ -71,6 +75,7 @@ function App  ()  {
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
             <Route path="Experiences" element={<Experiences />} />
+            <Route path="Research" element={<Research />} />
             <Route path="Contact" element={<Contact darkMode={darkMode}/>} />
           </Route>
         </Routes>

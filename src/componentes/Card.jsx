@@ -7,26 +7,26 @@ import { AiFillBank } from "react-icons/ai";
           {
             id: 1,
             icon: <GiBookshelf size={30}/> , // Replace with the actual icon from react-icons
-            title: 'First title',
-            text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  .',
+            title: 'Bacolorioc',
+            text: '	Licence en Physique 1992, Faculté des Sciences de Meknès  .',
             },
           {
               id: 2,
               icon:  <AiFillBank  size={30}/> , // Replace with the actual icon from react-icons
-              title: 'Secand title',
-              text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  .',
+              title: 'Master',
+              text: '	CEA Spectroscopie optique et moléculaire 1993, Faculté des Sciences de Meknès  .',
             },
           {
               id: 3,
               icon:  <AiFillBank  size={30}/> , // Replace with the actual icon from react-icons
               title: 'Secand title',
-              text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  .',
+              text: '	Doctorat en Télécommunication 2001, Faculté des Sciences de Meknès Formation Qualifiante Administration des bases de données  ENSIAS Rabat 2002.',
             },
           {
               id: 4,
               icon:  <AiFillBank  size={30}/> , // Replace with the actual icon from react-icons
               title: 'Secand title',
-              text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  .',
+              text: ' Habilitation Universitaire, Faculté des Sciences et Techniques Er-Rachidia 2008 .',
             },
         ];
 function Card() {
